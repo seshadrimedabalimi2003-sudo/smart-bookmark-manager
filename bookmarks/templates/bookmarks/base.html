@@ -2,10 +2,91 @@
 <html>
 <head>
     <title>Smart Bookmark Manager</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Courier New", monospace; /* Unix style */
+            background-color: #0f172a;
+            color: #e2e8f0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #334155;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0ea5e9;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #334155;
+            background: #0f172a;
+            color: white;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .bookmark-item {
+            padding: 10px;
+            border-bottom: 1px solid #334155;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Smart Bookmark Manager</h1>
-    <hr>
-    {% block content %}{% endblock %}
+    <div class="container">
+        <h1>Smart Bookmark Manager</h1>
+        <hr>
+
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
