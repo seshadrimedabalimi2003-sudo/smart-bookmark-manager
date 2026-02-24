@@ -43,4 +43,5 @@ Visit:
 http://127.0.0.1:8000/
 
 ## Live Deployment
-(Add your Render live URL here after deployment)
+
+https://smart-bookmark-manager-1.onrender.com
